@@ -20,13 +20,13 @@
 }
 
 .App-link {
-  color: #0364FF;
+  color: #0364ff;
   font-size: 24px;
   cursor: pointer;
   background: none;
-  border: none
+  border: none;
 }
 
 .App-link:hover {
-  color: #075DE5
+  color: #075de5;
 }

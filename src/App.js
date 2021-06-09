@@ -7,9 +7,7 @@ import "./App.css";
 function App() {
   const [account, setAccount] = useState();
 
-  const onClickLogin = async (e) => {
-    e.preventDefault();
-
+  const onClickLogin = async () => {
     const torus = new Torus({});
     await torus.init({
       enableLogging: false,
@@ -28,8 +26,12 @@ function App() {
         <img src={wordmark} className="App-logo" alt="logo" />
         {account ? (
           <div className="App-info">
-            <p><strong>Address</strong>: {account.address}</p>
-            <p><strong>Balance</strong>: {account.balance}</p>
+            <p>
+              <strong>Address</strong>: {account.address}
+            </p>
+            <p>
+              <strong>Balance</strong>: {account.balance}
+            </p>
           </div>
         ) : (
           <>
