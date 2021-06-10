@@ -2,6 +2,8 @@
 
 Example of using Torus Embed in a React app.
 
+More details: [Torus Developers](https://developer.tor.us) and [Torus Docs](https://docs.tor.us).
+
 ### `yarn start`
 
 Runs the app in the development mode.\

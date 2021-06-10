@@ -16,64 +16,15 @@ function App() {
         theme: {
           isDark: false,
           colors: {
-            torusBrand1: "#000000",
-            torusGray2: "#FBF7F3",
+            torusBrand1: "#282c34",
           },
         },
-        logoDark: "https://startrail.io/images/front/startrail-top__main.svg", // Dark logo for light background
-        logoLight: "https://images.toruswallet.io/startrail-logo-light.svg", // Light logo for dark background
+        logoDark: "https://tkey.surge.sh/images/Device.svg", // Dark logo for light background
+        logoLight: "https://tkey.surge.sh/images/Device.svg", // Light logo for dark background
         topupHide: false,
         featuredBillboardHide: true,
-        tncLink: {
-          en: "http://example.com/tnc/en",
-          ja: "http://example.com/tnc/ja",
-        },
-        privacyPolicy: {
-          en: "http://example.com/tnc/en",
-          ja: "http://example.com/tnc/ja",
-        },
-        contactLink: {
-          en: "http://example.com/tnc/en",
-          ja: "http://example.com/tnc/ja",
-        },
         disclaimerHide: true,
         defaultLanguage: "en",
-        customTranslations: {
-          en: {
-            login: {
-              acceptTerms: "By logging in, you accept Examples",
-              your: "Your",
-              digitalWallet: "digital wallet instantly",
-              buttonText: "Login with Startrail",
-            },
-            dappTransfer: {
-              data: "Data to sign",
-            },
-            dappPermission: {
-              permission: "Permission",
-              requestFrom: "Request from",
-              accessUserInfo:
-                "To access your Google Email Address, Profile Photo and Name",
-            },
-          },
-          ja: {
-            login: {
-              acceptTerms: "ログインすると、Examples を受け入れます",
-              your: "君の",
-              digitalWallet: "すぐにデジタルウォレット",
-              buttonText: "Startrailでログイン",
-            },
-            dappTransfer: {
-              data: "あなたがサインするデータ",
-            },
-            dappPermission: {
-              permission: "下記の内容を許可しますか",
-              requestFrom: "許可を求めているアプリケーション",
-              accessUserInfo:
-                "受け取る情報: Googleメール、プロフィール写真、名前",
-            },
-          },
-        },
       },
     });
     await torus.login();
